@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload
+  namespace: bench
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: workload }
+  template:
+    metadata:
+      labels: { app: workload }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+    spec:
+      # The RL agent rewrites nodeAffinity to steer pods onto spot vs on-demand.
+      # Baselines leave this empty (homogeneous placement).
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 1
+            preference:
+              matchExpressions:
+              - key: node-lifecycle
+                operator: In
+                values: ["ondemand"]
+      containers:
+      - name: workload
+        image: spot-workload:v1
+        imagePullPolicy: IfNotPresent
+        ports: [{ containerPort: 8080 }]
+        env:
+        - { name: WORK_MS, value: "40" }
+        resources:
+          requests: { cpu: "200m", memory: "128Mi" }
+          limits:   { cpu: "500m", memory: "256Mi" }
+        readinessProbe:
+          httpGet: { path: /healthz, port: 8080 }

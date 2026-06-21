@@ -1,0 +1,17 @@
+# Baseline 3: KEDA event-driven, scaling on request rate from Prometheus.
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: workload-keda
+  namespace: bench
+spec:
+  scaleTargetRef: { name: workload }
+  minReplicaCount: 1
+  maxReplicaCount: 20
+  triggers:
+  - type: prometheus
+    metadata:
+      serverAddress: http://prom-kube-prometheus-stack-prometheus.monitoring:9090
+      metricName: http_reqs
+      query: sum(rate(http_request_duration_seconds_count{namespace="bench"}[1m]))
+      threshold: "50"

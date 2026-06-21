@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: workload
+  namespace: bench
+spec:
+  selector: { app: workload }
+  ports: [{ port: 80, targetPort: 8080 }]

@@ -1,0 +1,6 @@
+{
+  "name": "spot-workload",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": { "express": "^4.19.2", "prom-client": "^15.1.0" }
+}
