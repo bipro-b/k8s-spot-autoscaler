@@ -66,7 +66,10 @@ class AutoscaleEnv(gym.Env):
                    + self.w_slo * slo_violation
                    + self.w_risk * risk_exposure)
 
+        current_i = self.i
         self.i += 1
         terminated = self.i >= len(self.trace)
-        info = {**snap, "evicted": evicted, "slo_violation": slo_violation, "reward": reward}
+        info = {**snap, "evicted": evicted, "slo_violation": slo_violation, "reward": reward,
+                "offered_rps": float(self.trace.iloc[current_i]["rps"]),
+                "served_rps": snap["rps"]}
         return self._obs(snap), float(reward), terminated, False, info

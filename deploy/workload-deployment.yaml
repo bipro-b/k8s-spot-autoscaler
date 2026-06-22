@@ -14,14 +14,13 @@ spec:
         prometheus.io/scrape: "true"
         prometheus.io/port: "8080"
     spec:
-      # The RL agent rewrites nodeAffinity to steer pods onto spot vs on-demand.
-      # Baselines leave this empty (homogeneous placement).
+      # Hard affinity: HPA baseline runs PURELY on the on-demand node.
+      # Pods that can't schedule here go Pending rather than spilling to spot.
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 1
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: node-lifecycle
                 operator: In
                 values: ["ondemand"]
@@ -31,9 +30,9 @@ spec:
         imagePullPolicy: IfNotPresent
         ports: [{ containerPort: 8080 }]
         env:
-        - { name: WORK_MS, value: "40" }
+        - { name: WORK_MS, value: "50" }
         resources:
-          requests: { cpu: "200m", memory: "128Mi" }
-          limits:   { cpu: "500m", memory: "256Mi" }
+          requests: { cpu: "100m", memory: "128Mi" }
+          limits:   { cpu: "300m", memory: "256Mi" }
         readinessProbe:
           httpGet: { path: /healthz, port: 8080 }
