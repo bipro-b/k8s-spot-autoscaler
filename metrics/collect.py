@@ -5,7 +5,7 @@ feeds both the RL state and the evaluation metrics.
 
 TODO: set PROM_URL via `kubectl -n monitoring port-forward svc/prom-...-prometheus 9090`.
 """
-import os
+import math, os
 from prometheus_api_client import PrometheusConnect
 
 PROM_URL = os.environ.get("PROM_URL", "http://localhost:9090")
@@ -22,7 +22,10 @@ class Metrics:
     def _q(self, query, default=0.0):
         try:
             r = self.p.custom_query(query)
-            return float(r[0]["value"][1]) if r else default
+            if not r:
+                return default
+            val = float(r[0]["value"][1])
+            return default if math.isnan(val) or math.isinf(val) else val
         except Exception:
             return default
 

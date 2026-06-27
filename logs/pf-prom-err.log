@@ -1,0 +1,2 @@
+E0623 10:45:31.191671   18820 portforward.go:394] error copying from local connection to remote stream: read tcp6 [::1]:9090->[::1]:59474: wsarecv: An existing connection was forcibly closed by the remote host.
+E0623 10:46:23.488824   18820 portforward.go:394] error copying from local connection to remote stream: read tcp6 [::1]:9090->[::1]:59484: wsarecv: An existing connection was forcibly closed by the remote host.

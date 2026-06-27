@@ -13,7 +13,7 @@ export const options = {
       executor: "constant-arrival-rate",
       rate: RPS, timeUnit: "1s",
       duration: __ENV.STEP_DURATION || "60s",
-      preAllocatedVUs: Math.max(20, RPS), maxVUs: Math.max(50, RPS * 3),
+      preAllocatedVUs: 1, maxVUs: Math.max(20, RPS),
     },
   },
 };
