@@ -1,0 +1,2242 @@
+{
+  "sim_per_seed": [
+    {
+      "seed": 0,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.45,
+      "p95_max": 0.5879581225343801,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0333248432911592,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 0,
+      "policy": "naive_spot",
+      "viol_rate": 0.45,
+      "p95_max": 0.6304720175484044,
+      "cost_hr": 5.283333333333333,
+      "pods_mean": 7.75,
+      "spot_frac": 0.5161290322580645,
+      "sf_rate": 0.0333248432911592,
+      "evict_count": 5,
+      "post_evict_p95": 0.4042389988057387,
+      "post_evict_sf": 0.0,
+      "pods": 7.75
+    },
+    {
+      "seed": 0,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.45,
+      "p95_max": 0.5879581225343801,
+      "cost_hr": 8.3,
+      "pods_mean": 8.15,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0333248432911592,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.15
+    },
+    {
+      "seed": 0,
+      "policy": "rl_spot",
+      "viol_rate": 0.55,
+      "p95_max": 3.5,
+      "cost_hr": 2.890000000000001,
+      "pods_mean": 6.316666666666666,
+      "spot_frac": 0.8390501319261213,
+      "sf_rate": 0.0366101122065992,
+      "evict_count": 5,
+      "post_evict_p95": 1.6077001059981255,
+      "post_evict_sf": 0.025531914893617,
+      "pods": 6.316666666666666
+    },
+    {
+      "seed": 1,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.3833333333333333,
+      "p95_max": 0.6713425575477723,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0241570682139661,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 1,
+      "policy": "naive_spot",
+      "viol_rate": 0.4,
+      "p95_max": 0.7756833578106525,
+      "cost_hr": 5.266666666666667,
+      "pods_mean": 7.8,
+      "spot_frac": 0.5128205128205129,
+      "sf_rate": 0.0241570682139661,
+      "evict_count": 4,
+      "post_evict_p95": 0.3963449187240349,
+      "post_evict_sf": 0.1818004676539361,
+      "pods": 7.8
+    },
+    {
+      "seed": 1,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.3833333333333333,
+      "p95_max": 0.7756833578106525,
+      "cost_hr": 8.55,
+      "pods_mean": 8.316666666666666,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0241570682139661,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.316666666666666
+    },
+    {
+      "seed": 1,
+      "policy": "rl_spot",
+      "viol_rate": 0.55,
+      "p95_max": 3.5,
+      "cost_hr": 2.8883333333333336,
+      "pods_mean": 6.4,
+      "spot_frac": 0.8098958333333334,
+      "sf_rate": 0.0261234107395447,
+      "evict_count": 4,
+      "post_evict_p95": 1.1062691335540342,
+      "post_evict_sf": 0.196414653156664,
+      "pods": 6.4
+    },
+    {
+      "seed": 2,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4666666666666667,
+      "p95_max": 0.7562604146829948,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0218162494830021,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 2,
+      "policy": "naive_spot",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.8087031502779417,
+      "cost_hr": 5.283333333333333,
+      "pods_mean": 7.7,
+      "spot_frac": 0.5194805194805194,
+      "sf_rate": 0.0218162494830021,
+      "evict_count": 6,
+      "post_evict_p95": 0.4714745984647566,
+      "post_evict_sf": 0.1092802098704705,
+      "pods": 7.7
+    },
+    {
+      "seed": 2,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4666666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 8.483333333333333,
+      "pods_mean": 8.266666666666667,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0224743685601639,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.266666666666667
+    },
+    {
+      "seed": 2,
+      "policy": "rl_spot",
+      "viol_rate": 0.5833333333333334,
+      "p95_max": 3.5,
+      "cost_hr": 3.113333333333333,
+      "pods_mean": 6.25,
+      "spot_frac": 0.7626666666666666,
+      "sf_rate": 0.0269560924500709,
+      "evict_count": 6,
+      "post_evict_p95": 1.444835501038664,
+      "post_evict_sf": 0.1392158691928015,
+      "pods": 6.25
+    },
+    {
+      "seed": 3,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.45,
+      "p95_max": 1.5516110856692895,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.04975208342386,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 3,
+      "policy": "naive_spot",
+      "viol_rate": 0.45,
+      "p95_max": 1.5516110856692895,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.04975208342386,
+      "evict_count": 2,
+      "post_evict_p95": 0.3607830105998575,
+      "post_evict_sf": 0.0,
+      "pods": 7.9
+    },
+    {
+      "seed": 3,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.45,
+      "p95_max": 1.5516110856692895,
+      "cost_hr": 8.5,
+      "pods_mean": 8.316666666666666,
+      "spot_frac": 0.0,
+      "sf_rate": 0.04975208342386,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.316666666666666
+    },
+    {
+      "seed": 3,
+      "policy": "rl_spot",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 1.5516110856692895,
+      "cost_hr": 2.6,
+      "pods_mean": 6.766666666666667,
+      "spot_frac": 0.8866995073891626,
+      "sf_rate": 0.04975208342386,
+      "evict_count": 2,
+      "post_evict_p95": 0.5038827685136209,
+      "post_evict_sf": 0.0,
+      "pods": 6.766666666666667
+    },
+    {
+      "seed": 4,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.3833333333333333,
+      "p95_max": 0.7584333385639446,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0373810455441269,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 4,
+      "policy": "naive_spot",
+      "viol_rate": 0.3833333333333333,
+      "p95_max": 0.7584333385639446,
+      "cost_hr": 5.283333333333333,
+      "pods_mean": 7.733333333333333,
+      "spot_frac": 0.5172413793103449,
+      "sf_rate": 0.0373810455441269,
+      "evict_count": 6,
+      "post_evict_p95": 0.3997390746214957,
+      "post_evict_sf": 0.1246246246246246,
+      "pods": 7.733333333333333
+    },
+    {
+      "seed": 4,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4,
+      "p95_max": 0.7584333385639446,
+      "cost_hr": 8.233333333333333,
+      "pods_mean": 8.083333333333334,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0373810455441269,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.083333333333334
+    },
+    {
+      "seed": 4,
+      "policy": "rl_spot",
+      "viol_rate": 0.5833333333333334,
+      "p95_max": 3.5,
+      "cost_hr": 2.7616666666666663,
+      "pods_mean": 5.7,
+      "spot_frac": 0.7865497076023392,
+      "sf_rate": 0.0387627893165517,
+      "evict_count": 6,
+      "post_evict_p95": 0.9967695732058228,
+      "post_evict_sf": 0.1336336336336336,
+      "pods": 5.7
+    },
+    {
+      "seed": 5,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.3166666666666666,
+      "p95_max": 1.1591617318892549,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0470246361252656,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 5,
+      "policy": "naive_spot",
+      "viol_rate": 0.3166666666666666,
+      "p95_max": 1.1591617318892549,
+      "cost_hr": 5.25,
+      "pods_mean": 7.85,
+      "spot_frac": 0.5095541401273885,
+      "sf_rate": 0.0470246361252656,
+      "evict_count": 4,
+      "post_evict_p95": 0.2360510693325038,
+      "post_evict_sf": 0.1757845631891433,
+      "pods": 7.85
+    },
+    {
+      "seed": 5,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.3,
+      "p95_max": 3.5,
+      "cost_hr": 8.816666666666666,
+      "pods_mean": 8.516666666666667,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0473073615988308,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.516666666666667
+    },
+    {
+      "seed": 5,
+      "policy": "rl_spot",
+      "viol_rate": 0.4,
+      "p95_max": 3.5,
+      "cost_hr": 2.87,
+      "pods_mean": 6.466666666666667,
+      "spot_frac": 0.8092783505154639,
+      "sf_rate": 0.0520111377221557,
+      "evict_count": 4,
+      "post_evict_p95": 1.044338247763896,
+      "post_evict_sf": 0.2033502968617472,
+      "pods": 6.466666666666667
+    },
+    {
+      "seed": 6,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 0.7829162704984767,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0610995184204419,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 6,
+      "policy": "naive_spot",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 0.7829162704984767,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.0610995184204419,
+      "evict_count": 2,
+      "post_evict_p95": 0.4596006764906137,
+      "post_evict_sf": 0.0,
+      "pods": 7.9
+    },
+    {
+      "seed": 6,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.7829162704984767,
+      "cost_hr": 8.466666666666667,
+      "pods_mean": 8.3,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0610995184204419,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.3
+    },
+    {
+      "seed": 6,
+      "policy": "rl_spot",
+      "viol_rate": 0.6333333333333333,
+      "p95_max": 1.3421421779973883,
+      "cost_hr": 2.525,
+      "pods_mean": 6.516666666666667,
+      "spot_frac": 0.8823529411764706,
+      "sf_rate": 0.0610995184204419,
+      "evict_count": 2,
+      "post_evict_p95": 0.6714432358284217,
+      "post_evict_sf": 0.0,
+      "pods": 6.516666666666667
+    },
+    {
+      "seed": 7,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.601164231444404,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0488024083142498,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 7,
+      "policy": "naive_spot",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.601164231444404,
+      "cost_hr": 5.25,
+      "pods_mean": 7.85,
+      "spot_frac": 0.5095541401273885,
+      "sf_rate": 0.0488024083142498,
+      "evict_count": 3,
+      "post_evict_p95": 0.2623395827846529,
+      "post_evict_sf": 0.0,
+      "pods": 7.85
+    },
+    {
+      "seed": 7,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.3166666666666666,
+      "p95_max": 0.601164231444404,
+      "cost_hr": 8.366666666666667,
+      "pods_mean": 8.25,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0488024083142498,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.25
+    },
+    {
+      "seed": 7,
+      "policy": "rl_spot",
+      "viol_rate": 0.4833333333333333,
+      "p95_max": 0.7348209435112475,
+      "cost_hr": 2.6866666666666665,
+      "pods_mean": 6.416666666666667,
+      "spot_frac": 0.8415584415584416,
+      "sf_rate": 0.0488024083142498,
+      "evict_count": 3,
+      "post_evict_p95": 0.3308612720512143,
+      "post_evict_sf": 0.0,
+      "pods": 6.416666666666667
+    },
+    {
+      "seed": 8,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4,
+      "p95_max": 0.8382720905614905,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0322137375628998,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 8,
+      "policy": "naive_spot",
+      "viol_rate": 0.4166666666666667,
+      "p95_max": 0.8382720905614905,
+      "cost_hr": 5.283333333333333,
+      "pods_mean": 7.716666666666667,
+      "spot_frac": 0.5183585313174945,
+      "sf_rate": 0.0322137375628998,
+      "evict_count": 6,
+      "post_evict_p95": 0.4645944662255601,
+      "post_evict_sf": 0.1075650118203309,
+      "pods": 7.716666666666667
+    },
+    {
+      "seed": 8,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4,
+      "p95_max": 0.8972162591699004,
+      "cost_hr": 8.333333333333334,
+      "pods_mean": 8.183333333333334,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0322137375628998,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.183333333333334
+    },
+    {
+      "seed": 8,
+      "policy": "rl_spot",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 2.963333333333333,
+      "pods_mean": 6.083333333333333,
+      "spot_frac": 0.7835616438356164,
+      "sf_rate": 0.0343434301273346,
+      "evict_count": 6,
+      "post_evict_p95": 1.9811094020174664,
+      "post_evict_sf": 0.1288619374646788,
+      "pods": 6.083333333333333
+    },
+    {
+      "seed": 9,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4,
+      "p95_max": 0.9088190812298268,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0596695671431992,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 9,
+      "policy": "naive_spot",
+      "viol_rate": 0.4166666666666667,
+      "p95_max": 1.0293764911914598,
+      "cost_hr": 5.3,
+      "pods_mean": 7.7,
+      "spot_frac": 0.5194805194805194,
+      "sf_rate": 0.0596695671431992,
+      "evict_count": 6,
+      "post_evict_p95": 0.4843920326890602,
+      "post_evict_sf": 0.0,
+      "pods": 7.7
+    },
+    {
+      "seed": 9,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4,
+      "p95_max": 0.9088190812298268,
+      "cost_hr": 8.15,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0596695671431992,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 9,
+      "policy": "rl_spot",
+      "viol_rate": 0.6333333333333333,
+      "p95_max": 3.5,
+      "cost_hr": 2.741666666666668,
+      "pods_mean": 5.65,
+      "spot_frac": 0.8407079646017699,
+      "sf_rate": 0.0627490432488607,
+      "evict_count": 6,
+      "post_evict_p95": 1.9343696581037837,
+      "post_evict_sf": 0.0151402995244232,
+      "pods": 5.65
+    },
+    {
+      "seed": 10,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.4587911945264307,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0248421971154856,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 10,
+      "policy": "naive_spot",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.4587911945264307,
+      "cost_hr": 5.25,
+      "pods_mean": 7.833333333333333,
+      "spot_frac": 0.5106382978723405,
+      "sf_rate": 0.0248421971154856,
+      "evict_count": 4,
+      "post_evict_p95": 0.2344237601649837,
+      "post_evict_sf": 0.1860847333820307,
+      "pods": 7.833333333333333
+    },
+    {
+      "seed": 10,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.4159410231061343,
+      "cost_hr": 8.566666666666666,
+      "pods_mean": 8.316666666666666,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0248421971154856,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.316666666666666
+    },
+    {
+      "seed": 10,
+      "policy": "rl_spot",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 2.601666666666666,
+      "pods_mean": 6.55,
+      "spot_frac": 0.8829516539440203,
+      "sf_rate": 0.0316669879305684,
+      "evict_count": 4,
+      "post_evict_p95": 2.692091209903887,
+      "post_evict_sf": 0.2485613497479021,
+      "pods": 6.55
+    },
+    {
+      "seed": 11,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.45,
+      "p95_max": 0.4926544602457512,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0250398912270293,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 11,
+      "policy": "naive_spot",
+      "viol_rate": 0.45,
+      "p95_max": 0.5501711293633675,
+      "cost_hr": 5.3,
+      "pods_mean": 7.7,
+      "spot_frac": 0.5194805194805194,
+      "sf_rate": 0.0250398912270293,
+      "evict_count": 7,
+      "post_evict_p95": 0.3209169888532703,
+      "post_evict_sf": 0.0,
+      "pods": 7.7
+    },
+    {
+      "seed": 11,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.45,
+      "p95_max": 0.4926544602457512,
+      "cost_hr": 8.416666666666666,
+      "pods_mean": 8.316666666666666,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0250398912270293,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.316666666666666
+    },
+    {
+      "seed": 11,
+      "policy": "rl_spot",
+      "viol_rate": 0.5666666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 2.870000000000001,
+      "pods_mean": 5.95,
+      "spot_frac": 0.823529411764706,
+      "sf_rate": 0.0289274416661586,
+      "evict_count": 7,
+      "post_evict_p95": 1.796939151011986,
+      "post_evict_sf": 0.020147582379342,
+      "pods": 5.95
+    },
+    {
+      "seed": 12,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.45,
+      "p95_max": 1.0385621045905649,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0237031207770941,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 12,
+      "policy": "naive_spot",
+      "viol_rate": 0.4666666666666667,
+      "p95_max": 1.0385621045905649,
+      "cost_hr": 5.25,
+      "pods_mean": 7.85,
+      "spot_frac": 0.5095541401273885,
+      "sf_rate": 0.0237031207770941,
+      "evict_count": 3,
+      "post_evict_p95": 0.2622409444711986,
+      "post_evict_sf": 0.0,
+      "pods": 7.85
+    },
+    {
+      "seed": 12,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.45,
+      "p95_max": 3.5,
+      "cost_hr": 8.683333333333334,
+      "pods_mean": 8.416666666666666,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0242534186374506,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.416666666666666
+    },
+    {
+      "seed": 12,
+      "policy": "rl_spot",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 3.5,
+      "cost_hr": 2.745,
+      "pods_mean": 6.566666666666666,
+      "spot_frac": 0.8604060913705585,
+      "sf_rate": 0.0257667377534311,
+      "evict_count": 3,
+      "post_evict_p95": 1.4137564700536709,
+      "post_evict_sf": 0.0,
+      "pods": 6.566666666666666
+    },
+    {
+      "seed": 13,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.6105440955606141,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0230064510939384,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 13,
+      "policy": "naive_spot",
+      "viol_rate": 0.55,
+      "p95_max": 0.8514988400192971,
+      "cost_hr": 5.25,
+      "pods_mean": 7.85,
+      "spot_frac": 0.5095541401273885,
+      "sf_rate": 0.0230064510939384,
+      "evict_count": 3,
+      "post_evict_p95": 0.4800071702663291,
+      "post_evict_sf": 0.2304072930451404,
+      "pods": 7.85
+    },
+    {
+      "seed": 13,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.6105440955606141,
+      "cost_hr": 8.216666666666667,
+      "pods_mean": 8.116666666666667,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0230064510939384,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.116666666666667
+    },
+    {
+      "seed": 13,
+      "policy": "rl_spot",
+      "viol_rate": 0.65,
+      "p95_max": 3.5,
+      "cost_hr": 2.643333333333333,
+      "pods_mean": 6.5,
+      "spot_frac": 0.8769230769230769,
+      "sf_rate": 0.0235965586504753,
+      "evict_count": 3,
+      "post_evict_p95": 2.468628487753474,
+      "post_evict_sf": 0.2362887810616085,
+      "pods": 6.5
+    },
+    {
+      "seed": 14,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 1.0466304719849755,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0359699235125728,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 14,
+      "policy": "naive_spot",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 1.0466304719849755,
+      "cost_hr": 5.25,
+      "pods_mean": 7.833333333333333,
+      "spot_frac": 0.5106382978723405,
+      "sf_rate": 0.0359699235125728,
+      "evict_count": 4,
+      "post_evict_p95": 0.3081640046028343,
+      "post_evict_sf": 0.0,
+      "pods": 7.833333333333333
+    },
+    {
+      "seed": 14,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.5166666666666667,
+      "p95_max": 1.0466304719849755,
+      "cost_hr": 8.616666666666667,
+      "pods_mean": 8.333333333333334,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0359699235125728,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.333333333333334
+    },
+    {
+      "seed": 14,
+      "policy": "rl_spot",
+      "viol_rate": 0.5833333333333334,
+      "p95_max": 3.5,
+      "cost_hr": 2.775,
+      "pods_mean": 6.733333333333333,
+      "spot_frac": 0.8539603960396039,
+      "sf_rate": 0.0367716421689972,
+      "evict_count": 4,
+      "post_evict_p95": 1.197634735998931,
+      "post_evict_sf": 0.0,
+      "pods": 6.733333333333333
+    },
+    {
+      "seed": 15,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.5666666666666667,
+      "p95_max": 0.6960049437652063,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0345851589491934,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 15,
+      "policy": "naive_spot",
+      "viol_rate": 0.5666666666666667,
+      "p95_max": 0.6960049437652063,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.0345851589491934,
+      "evict_count": 3,
+      "post_evict_p95": 0.2455482911636006,
+      "post_evict_sf": 0.229491173416407,
+      "pods": 7.9
+    },
+    {
+      "seed": 15,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.55,
+      "p95_max": 0.6960049437652063,
+      "cost_hr": 8.433333333333334,
+      "pods_mean": 8.233333333333333,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0345851589491934,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.233333333333333
+    },
+    {
+      "seed": 15,
+      "policy": "rl_spot",
+      "viol_rate": 0.6,
+      "p95_max": 3.5,
+      "cost_hr": 2.731666666666668,
+      "pods_mean": 6.683333333333334,
+      "spot_frac": 0.8553615960099751,
+      "sf_rate": 0.0354660070092395,
+      "evict_count": 3,
+      "post_evict_p95": 1.43129523119461,
+      "post_evict_sf": 0.2354250111259457,
+      "pods": 6.683333333333334
+    },
+    {
+      "seed": 16,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.55,
+      "p95_max": 0.5894805019399427,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0472034415310721,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 16,
+      "policy": "naive_spot",
+      "viol_rate": 0.5666666666666667,
+      "p95_max": 0.5894805019399427,
+      "cost_hr": 5.25,
+      "pods_mean": 7.85,
+      "spot_frac": 0.5095541401273885,
+      "sf_rate": 0.0472034415310721,
+      "evict_count": 3,
+      "post_evict_p95": 0.3345861896409823,
+      "post_evict_sf": 0.0,
+      "pods": 7.85
+    },
+    {
+      "seed": 16,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.5894805019399427,
+      "cost_hr": 8.433333333333334,
+      "pods_mean": 8.166666666666666,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0472034415310721,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.166666666666666
+    },
+    {
+      "seed": 16,
+      "policy": "rl_spot",
+      "viol_rate": 0.6833333333333333,
+      "p95_max": 3.5,
+      "cost_hr": 2.683333333333332,
+      "pods_mean": 6.716666666666667,
+      "spot_frac": 0.8684863523573201,
+      "sf_rate": 0.0513741326315567,
+      "evict_count": 3,
+      "post_evict_p95": 1.5099636079263483,
+      "post_evict_sf": 0.0,
+      "pods": 6.716666666666667
+    },
+    {
+      "seed": 17,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.6369105290603223,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.034555367783887,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 17,
+      "policy": "naive_spot",
+      "viol_rate": 0.3666666666666666,
+      "p95_max": 0.6369105290603223,
+      "cost_hr": 5.283333333333333,
+      "pods_mean": 7.75,
+      "spot_frac": 0.5161290322580645,
+      "sf_rate": 0.034555367783887,
+      "evict_count": 5,
+      "post_evict_p95": 0.3547416603508507,
+      "post_evict_sf": 0.1369085173501577,
+      "pods": 7.75
+    },
+    {
+      "seed": 17,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.3333333333333333,
+      "p95_max": 0.6036293436278668,
+      "cost_hr": 8.383333333333333,
+      "pods_mean": 8.2,
+      "spot_frac": 0.0,
+      "sf_rate": 0.034555367783887,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.2
+    },
+    {
+      "seed": 17,
+      "policy": "rl_spot",
+      "viol_rate": 0.45,
+      "p95_max": 3.5,
+      "cost_hr": 2.92,
+      "pods_mean": 6.283333333333333,
+      "spot_frac": 0.806366047745358,
+      "sf_rate": 0.0348558034155529,
+      "evict_count": 5,
+      "post_evict_p95": 1.168989218112062,
+      "post_evict_sf": 0.1405137449301487,
+      "pods": 6.283333333333333
+    },
+    {
+      "seed": 18,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 1.1263033854402449,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0481183343849621,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 18,
+      "policy": "naive_spot",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 1.1263033854402449,
+      "cost_hr": 5.25,
+      "pods_mean": 7.85,
+      "spot_frac": 0.5095541401273885,
+      "sf_rate": 0.0481183343849621,
+      "evict_count": 3,
+      "post_evict_p95": 0.4338051941511769,
+      "post_evict_sf": 0.0,
+      "pods": 7.85
+    },
+    {
+      "seed": 18,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 1.2094905784994678,
+      "cost_hr": 8.0,
+      "pods_mean": 7.916666666666667,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0481183343849621,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 7.916666666666667
+    },
+    {
+      "seed": 18,
+      "policy": "rl_spot",
+      "viol_rate": 0.5666666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 2.478333333333334,
+      "pods_mean": 6.516666666666667,
+      "spot_frac": 0.918158567774936,
+      "sf_rate": 0.0501383156904235,
+      "evict_count": 3,
+      "post_evict_p95": 2.4639124579659697,
+      "post_evict_sf": 0.0315500685871056,
+      "pods": 6.516666666666667
+    },
+    {
+      "seed": 19,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.45,
+      "p95_max": 0.6457762202446714,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0240901348241707,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 19,
+      "policy": "naive_spot",
+      "viol_rate": 0.4666666666666667,
+      "p95_max": 0.6457762202446714,
+      "cost_hr": 5.266666666666667,
+      "pods_mean": 7.8,
+      "spot_frac": 0.5128205128205129,
+      "sf_rate": 0.0240901348241707,
+      "evict_count": 5,
+      "post_evict_p95": 0.1936681735740533,
+      "post_evict_sf": 0.0,
+      "pods": 7.8
+    },
+    {
+      "seed": 19,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.45,
+      "p95_max": 0.6457762202446714,
+      "cost_hr": 8.416666666666666,
+      "pods_mean": 8.233333333333333,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0240901348241707,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.233333333333333
+    },
+    {
+      "seed": 19,
+      "policy": "rl_spot",
+      "viol_rate": 0.5666666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 2.813333333333333,
+      "pods_mean": 6.4,
+      "spot_frac": 0.8489583333333334,
+      "sf_rate": 0.0248055835137259,
+      "evict_count": 5,
+      "post_evict_p95": 1.627788768003985,
+      "post_evict_sf": 0.0022471910112359,
+      "pods": 6.4
+    },
+    {
+      "seed": 20,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4,
+      "p95_max": 0.6881578202398658,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0346013056794991,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 20,
+      "policy": "naive_spot",
+      "viol_rate": 0.4166666666666667,
+      "p95_max": 0.6881578202398658,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.0346013056794991,
+      "evict_count": 2,
+      "post_evict_p95": 0.2363565554467738,
+      "post_evict_sf": 0.0,
+      "pods": 7.9
+    },
+    {
+      "seed": 20,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4,
+      "p95_max": 0.6881578202398658,
+      "cost_hr": 8.216666666666667,
+      "pods_mean": 8.033333333333333,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0346013056794991,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.033333333333333
+    },
+    {
+      "seed": 20,
+      "policy": "rl_spot",
+      "viol_rate": 0.4833333333333333,
+      "p95_max": 0.758650177241181,
+      "cost_hr": 2.426666666666668,
+      "pods_mean": 6.566666666666666,
+      "spot_frac": 0.9187817258883249,
+      "sf_rate": 0.0346013056794991,
+      "evict_count": 2,
+      "post_evict_p95": 0.2565481272782494,
+      "post_evict_sf": 0.0,
+      "pods": 6.566666666666666
+    },
+    {
+      "seed": 21,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 0.7229444395860333,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0378366488625445,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 21,
+      "policy": "naive_spot",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 0.7229444395860333,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.0378366488625445,
+      "evict_count": 2,
+      "post_evict_p95": 0.2951283344812037,
+      "post_evict_sf": 0.0,
+      "pods": 7.9
+    },
+    {
+      "seed": 21,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 0.7229444395860333,
+      "cost_hr": 8.4,
+      "pods_mean": 8.233333333333333,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0378366488625445,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.233333333333333
+    },
+    {
+      "seed": 21,
+      "policy": "rl_spot",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.7229444395860333,
+      "cost_hr": 2.5416666666666674,
+      "pods_mean": 6.716666666666667,
+      "spot_frac": 0.9057071960297766,
+      "sf_rate": 0.0378366488625445,
+      "evict_count": 2,
+      "post_evict_p95": 0.4044944160320384,
+      "post_evict_sf": 0.0,
+      "pods": 6.716666666666667
+    },
+    {
+      "seed": 22,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.7175956573773147,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.033173201351276,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 22,
+      "policy": "naive_spot",
+      "viol_rate": 0.55,
+      "p95_max": 0.7175956573773147,
+      "cost_hr": 5.266666666666667,
+      "pods_mean": 7.8,
+      "spot_frac": 0.5128205128205129,
+      "sf_rate": 0.033173201351276,
+      "evict_count": 4,
+      "post_evict_p95": 0.5468101205983141,
+      "post_evict_sf": 0.0,
+      "pods": 7.8
+    },
+    {
+      "seed": 22,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.5333333333333333,
+      "p95_max": 0.7514362242025403,
+      "cost_hr": 8.5,
+      "pods_mean": 8.233333333333333,
+      "spot_frac": 0.0,
+      "sf_rate": 0.033173201351276,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.233333333333333
+    },
+    {
+      "seed": 22,
+      "policy": "rl_spot",
+      "viol_rate": 0.6,
+      "p95_max": 3.5,
+      "cost_hr": 2.6266666666666665,
+      "pods_mean": 5.883333333333334,
+      "spot_frac": 0.8271954674220962,
+      "sf_rate": 0.0367789439188597,
+      "evict_count": 4,
+      "post_evict_p95": 1.34605772575288,
+      "post_evict_sf": 0.0,
+      "pods": 5.883333333333334
+    },
+    {
+      "seed": 23,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 1.0574266767213722,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0427547188359954,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 23,
+      "policy": "naive_spot",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 1.0574266767213722,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.0427547188359954,
+      "evict_count": 2,
+      "post_evict_p95": 0.5509910295735257,
+      "post_evict_sf": 0.0,
+      "pods": 7.9
+    },
+    {
+      "seed": 23,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 3.5,
+      "cost_hr": 8.516666666666667,
+      "pods_mean": 8.233333333333333,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0430957248035998,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.233333333333333
+    },
+    {
+      "seed": 23,
+      "policy": "rl_spot",
+      "viol_rate": 0.4666666666666667,
+      "p95_max": 3.5,
+      "cost_hr": 2.6116666666666672,
+      "pods_mean": 6.766666666666667,
+      "spot_frac": 0.8842364532019704,
+      "sf_rate": 0.0441211158548909,
+      "evict_count": 2,
+      "post_evict_p95": 0.668603691197085,
+      "post_evict_sf": 0.0,
+      "pods": 6.766666666666667
+    },
+    {
+      "seed": 24,
+      "policy": "hpa_ondemand",
+      "viol_rate": 0.4166666666666667,
+      "p95_max": 0.7685266329865077,
+      "cost_hr": 8.0,
+      "pods_mean": 8.0,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0629012625912416,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.0
+    },
+    {
+      "seed": 24,
+      "policy": "naive_spot",
+      "viol_rate": 0.4166666666666667,
+      "p95_max": 0.7685266329865077,
+      "cost_hr": 5.233333333333333,
+      "pods_mean": 7.9,
+      "spot_frac": 0.5063291139240506,
+      "sf_rate": 0.0629012625912416,
+      "evict_count": 2,
+      "post_evict_p95": 0.320649522478185,
+      "post_evict_sf": 0.0,
+      "pods": 7.9
+    },
+    {
+      "seed": 24,
+      "policy": "rl_homogeneous",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 0.7685266329865077,
+      "cost_hr": 8.45,
+      "pods_mean": 8.266666666666667,
+      "spot_frac": 0.0,
+      "sf_rate": 0.0629012625912416,
+      "evict_count": 0,
+      "post_evict_p95": null,
+      "post_evict_sf": null,
+      "pods": 8.266666666666667
+    },
+    {
+      "seed": 24,
+      "policy": "rl_spot",
+      "viol_rate": 0.4333333333333333,
+      "p95_max": 0.7685266329865077,
+      "cost_hr": 2.591666666666668,
+      "pods_mean": 6.766666666666667,
+      "spot_frac": 0.8990147783251231,
+      "sf_rate": 0.0629012625912416,
+      "evict_count": 2,
+      "post_evict_p95": 0.3666090842383188,
+      "post_evict_sf": 0.0,
+      "pods": 6.766666666666667
+    }
+  ],
+  "sim_stats": {
+    "hpa_ondemand": {
+      "mean": {
+        "viol_rate": 0.4373333333333333,
+        "cost_hr": 8.0,
+        "spot_frac": 0.0,
+        "evict_count": 0.0,
+        "post_evict_p95": null
+      },
+      "std": {
+        "viol_rate": 0.07059272861515792,
+        "cost_hr": 0.0
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "viol_rate": 0.45,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 1,
+          "viol_rate": 0.3833333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 2,
+          "viol_rate": 0.4666666666666667,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 3,
+          "viol_rate": 0.45,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 4,
+          "viol_rate": 0.3833333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 5,
+          "viol_rate": 0.3166666666666666,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 6,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 7,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 8,
+          "viol_rate": 0.4,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 9,
+          "viol_rate": 0.4,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 10,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 11,
+          "viol_rate": 0.45,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 12,
+          "viol_rate": 0.45,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 13,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 14,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 15,
+          "viol_rate": 0.5666666666666667,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 16,
+          "viol_rate": 0.55,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 17,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 18,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 19,
+          "viol_rate": 0.45,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 20,
+          "viol_rate": 0.4,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 21,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 22,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 23,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 24,
+          "viol_rate": 0.4166666666666667,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        }
+      ]
+    },
+    "naive_spot": {
+      "mean": {
+        "viol_rate": 0.44733333333333325,
+        "cost_hr": 5.257999999999999,
+        "spot_frac": 0.5115066522409772,
+        "evict_count": 3.84,
+        "post_evict_p95": 0.36230385474222226
+      },
+      "std": {
+        "viol_rate": 0.07291547618075789,
+        "cost_hr": 0.022110831935702586
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "viol_rate": 0.45,
+          "cost_hr": 5.283333333333333,
+          "spot_frac": 0.5161290322580645,
+          "post_evict_p95": 0.4042389988057387
+        },
+        {
+          "seed": 1,
+          "viol_rate": 0.4,
+          "cost_hr": 5.266666666666667,
+          "spot_frac": 0.5128205128205129,
+          "post_evict_p95": 0.3963449187240349
+        },
+        {
+          "seed": 2,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 5.283333333333333,
+          "spot_frac": 0.5194805194805194,
+          "post_evict_p95": 0.4714745984647566
+        },
+        {
+          "seed": 3,
+          "viol_rate": 0.45,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.3607830105998575
+        },
+        {
+          "seed": 4,
+          "viol_rate": 0.3833333333333333,
+          "cost_hr": 5.283333333333333,
+          "spot_frac": 0.5172413793103449,
+          "post_evict_p95": 0.3997390746214957
+        },
+        {
+          "seed": 5,
+          "viol_rate": 0.3166666666666666,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5095541401273885,
+          "post_evict_p95": 0.2360510693325038
+        },
+        {
+          "seed": 6,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.4596006764906137
+        },
+        {
+          "seed": 7,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5095541401273885,
+          "post_evict_p95": 0.2623395827846529
+        },
+        {
+          "seed": 8,
+          "viol_rate": 0.4166666666666667,
+          "cost_hr": 5.283333333333333,
+          "spot_frac": 0.5183585313174945,
+          "post_evict_p95": 0.4645944662255601
+        },
+        {
+          "seed": 9,
+          "viol_rate": 0.4166666666666667,
+          "cost_hr": 5.3,
+          "spot_frac": 0.5194805194805194,
+          "post_evict_p95": 0.4843920326890602
+        },
+        {
+          "seed": 10,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5106382978723405,
+          "post_evict_p95": 0.2344237601649837
+        },
+        {
+          "seed": 11,
+          "viol_rate": 0.45,
+          "cost_hr": 5.3,
+          "spot_frac": 0.5194805194805194,
+          "post_evict_p95": 0.3209169888532703
+        },
+        {
+          "seed": 12,
+          "viol_rate": 0.4666666666666667,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5095541401273885,
+          "post_evict_p95": 0.2622409444711986
+        },
+        {
+          "seed": 13,
+          "viol_rate": 0.55,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5095541401273885,
+          "post_evict_p95": 0.4800071702663291
+        },
+        {
+          "seed": 14,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5106382978723405,
+          "post_evict_p95": 0.3081640046028343
+        },
+        {
+          "seed": 15,
+          "viol_rate": 0.5666666666666667,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.2455482911636006
+        },
+        {
+          "seed": 16,
+          "viol_rate": 0.5666666666666667,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5095541401273885,
+          "post_evict_p95": 0.3345861896409823
+        },
+        {
+          "seed": 17,
+          "viol_rate": 0.3666666666666666,
+          "cost_hr": 5.283333333333333,
+          "spot_frac": 0.5161290322580645,
+          "post_evict_p95": 0.3547416603508507
+        },
+        {
+          "seed": 18,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 5.25,
+          "spot_frac": 0.5095541401273885,
+          "post_evict_p95": 0.4338051941511769
+        },
+        {
+          "seed": 19,
+          "viol_rate": 0.4666666666666667,
+          "cost_hr": 5.266666666666667,
+          "spot_frac": 0.5128205128205129,
+          "post_evict_p95": 0.1936681735740533
+        },
+        {
+          "seed": 20,
+          "viol_rate": 0.4166666666666667,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.2363565554467738
+        },
+        {
+          "seed": 21,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.2951283344812037
+        },
+        {
+          "seed": 22,
+          "viol_rate": 0.55,
+          "cost_hr": 5.266666666666667,
+          "spot_frac": 0.5128205128205129,
+          "post_evict_p95": 0.5468101205983141
+        },
+        {
+          "seed": 23,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.5509910295735257
+        },
+        {
+          "seed": 24,
+          "viol_rate": 0.4166666666666667,
+          "cost_hr": 5.233333333333333,
+          "spot_frac": 0.5063291139240506,
+          "post_evict_p95": 0.320649522478185
+        }
+      ]
+    },
+    "rl_homogeneous": {
+      "mean": {
+        "viol_rate": 0.4366666666666667,
+        "cost_hr": 8.418,
+        "spot_frac": 0.0,
+        "evict_count": 0.0,
+        "post_evict_p95": null
+      },
+      "std": {
+        "viol_rate": 0.07103728806969124,
+        "cost_hr": 0.1739997871433351
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "viol_rate": 0.45,
+          "cost_hr": 8.3,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 1,
+          "viol_rate": 0.3833333333333333,
+          "cost_hr": 8.55,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 2,
+          "viol_rate": 0.4666666666666667,
+          "cost_hr": 8.483333333333333,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 3,
+          "viol_rate": 0.45,
+          "cost_hr": 8.5,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 4,
+          "viol_rate": 0.4,
+          "cost_hr": 8.233333333333333,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 5,
+          "viol_rate": 0.3,
+          "cost_hr": 8.816666666666666,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 6,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 8.466666666666667,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 7,
+          "viol_rate": 0.3166666666666666,
+          "cost_hr": 8.366666666666667,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 8,
+          "viol_rate": 0.4,
+          "cost_hr": 8.333333333333334,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 9,
+          "viol_rate": 0.4,
+          "cost_hr": 8.15,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 10,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 8.566666666666666,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 11,
+          "viol_rate": 0.45,
+          "cost_hr": 8.416666666666666,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 12,
+          "viol_rate": 0.45,
+          "cost_hr": 8.683333333333334,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 13,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 8.216666666666667,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 14,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 8.616666666666667,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 15,
+          "viol_rate": 0.55,
+          "cost_hr": 8.433333333333334,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 16,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 8.433333333333334,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 17,
+          "viol_rate": 0.3333333333333333,
+          "cost_hr": 8.383333333333333,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 18,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.0,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 19,
+          "viol_rate": 0.45,
+          "cost_hr": 8.416666666666666,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 20,
+          "viol_rate": 0.4,
+          "cost_hr": 8.216666666666667,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 21,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.4,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 22,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 8.5,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 23,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.516666666666667,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        },
+        {
+          "seed": 24,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 8.45,
+          "spot_frac": 0.0,
+          "post_evict_p95": null
+        }
+      ]
+    },
+    "rl_spot": {
+      "mean": {
+        "viol_rate": 0.5473333333333334,
+        "cost_hr": 2.7239999999999998,
+        "spot_frac": 0.8508943334694226,
+        "evict_count": 3.84,
+        "post_evict_p95": 1.2973956512199418
+      },
+      "std": {
+        "viol_rate": 0.06966852735420566,
+        "cost_hr": 0.16562871239724802
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "viol_rate": 0.55,
+          "cost_hr": 2.890000000000001,
+          "spot_frac": 0.8390501319261213,
+          "post_evict_p95": 1.6077001059981255
+        },
+        {
+          "seed": 1,
+          "viol_rate": 0.55,
+          "cost_hr": 2.8883333333333336,
+          "spot_frac": 0.8098958333333334,
+          "post_evict_p95": 1.1062691335540342
+        },
+        {
+          "seed": 2,
+          "viol_rate": 0.5833333333333334,
+          "cost_hr": 3.113333333333333,
+          "spot_frac": 0.7626666666666666,
+          "post_evict_p95": 1.444835501038664
+        },
+        {
+          "seed": 3,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 2.6,
+          "spot_frac": 0.8866995073891626,
+          "post_evict_p95": 0.5038827685136209
+        },
+        {
+          "seed": 4,
+          "viol_rate": 0.5833333333333334,
+          "cost_hr": 2.7616666666666663,
+          "spot_frac": 0.7865497076023392,
+          "post_evict_p95": 0.9967695732058228
+        },
+        {
+          "seed": 5,
+          "viol_rate": 0.4,
+          "cost_hr": 2.87,
+          "spot_frac": 0.8092783505154639,
+          "post_evict_p95": 1.044338247763896
+        },
+        {
+          "seed": 6,
+          "viol_rate": 0.6333333333333333,
+          "cost_hr": 2.525,
+          "spot_frac": 0.8823529411764706,
+          "post_evict_p95": 0.6714432358284217
+        },
+        {
+          "seed": 7,
+          "viol_rate": 0.4833333333333333,
+          "cost_hr": 2.6866666666666665,
+          "spot_frac": 0.8415584415584416,
+          "post_evict_p95": 0.3308612720512143
+        },
+        {
+          "seed": 8,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 2.963333333333333,
+          "spot_frac": 0.7835616438356164,
+          "post_evict_p95": 1.9811094020174664
+        },
+        {
+          "seed": 9,
+          "viol_rate": 0.6333333333333333,
+          "cost_hr": 2.741666666666668,
+          "spot_frac": 0.8407079646017699,
+          "post_evict_p95": 1.9343696581037837
+        },
+        {
+          "seed": 10,
+          "viol_rate": 0.5166666666666667,
+          "cost_hr": 2.601666666666666,
+          "spot_frac": 0.8829516539440203,
+          "post_evict_p95": 2.692091209903887
+        },
+        {
+          "seed": 11,
+          "viol_rate": 0.5666666666666667,
+          "cost_hr": 2.870000000000001,
+          "spot_frac": 0.823529411764706,
+          "post_evict_p95": 1.796939151011986
+        },
+        {
+          "seed": 12,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 2.745,
+          "spot_frac": 0.8604060913705585,
+          "post_evict_p95": 1.4137564700536709
+        },
+        {
+          "seed": 13,
+          "viol_rate": 0.65,
+          "cost_hr": 2.643333333333333,
+          "spot_frac": 0.8769230769230769,
+          "post_evict_p95": 2.468628487753474
+        },
+        {
+          "seed": 14,
+          "viol_rate": 0.5833333333333334,
+          "cost_hr": 2.775,
+          "spot_frac": 0.8539603960396039,
+          "post_evict_p95": 1.197634735998931
+        },
+        {
+          "seed": 15,
+          "viol_rate": 0.6,
+          "cost_hr": 2.731666666666668,
+          "spot_frac": 0.8553615960099751,
+          "post_evict_p95": 1.43129523119461
+        },
+        {
+          "seed": 16,
+          "viol_rate": 0.6833333333333333,
+          "cost_hr": 2.683333333333332,
+          "spot_frac": 0.8684863523573201,
+          "post_evict_p95": 1.5099636079263483
+        },
+        {
+          "seed": 17,
+          "viol_rate": 0.45,
+          "cost_hr": 2.92,
+          "spot_frac": 0.806366047745358,
+          "post_evict_p95": 1.168989218112062
+        },
+        {
+          "seed": 18,
+          "viol_rate": 0.5666666666666667,
+          "cost_hr": 2.478333333333334,
+          "spot_frac": 0.918158567774936,
+          "post_evict_p95": 2.4639124579659697
+        },
+        {
+          "seed": 19,
+          "viol_rate": 0.5666666666666667,
+          "cost_hr": 2.813333333333333,
+          "spot_frac": 0.8489583333333334,
+          "post_evict_p95": 1.627788768003985
+        },
+        {
+          "seed": 20,
+          "viol_rate": 0.4833333333333333,
+          "cost_hr": 2.426666666666668,
+          "spot_frac": 0.9187817258883249,
+          "post_evict_p95": 0.2565481272782494
+        },
+        {
+          "seed": 21,
+          "viol_rate": 0.5333333333333333,
+          "cost_hr": 2.5416666666666674,
+          "spot_frac": 0.9057071960297766,
+          "post_evict_p95": 0.4044944160320384
+        },
+        {
+          "seed": 22,
+          "viol_rate": 0.6,
+          "cost_hr": 2.6266666666666665,
+          "spot_frac": 0.8271954674220962,
+          "post_evict_p95": 1.34605772575288
+        },
+        {
+          "seed": 23,
+          "viol_rate": 0.4666666666666667,
+          "cost_hr": 2.6116666666666672,
+          "spot_frac": 0.8842364532019704,
+          "post_evict_p95": 0.668603691197085
+        },
+        {
+          "seed": 24,
+          "viol_rate": 0.4333333333333333,
+          "cost_hr": 2.591666666666668,
+          "spot_frac": 0.8990147783251231,
+          "post_evict_p95": 0.3666090842383188
+        }
+      ]
+    }
+  },
+  "real_stats": {},
+  "sig_tests": [
+    {
+      "name": "hpa_cost \u2212 rl_spot_cost",
+      "n": 25,
+      "mean_diff": 5.275999999999999,
+      "ci_lo": 5.2076318277438025,
+      "ci_hi": 5.344368172256195,
+      "t": 159.27190170222138,
+      "p": 8.199135450472203e-38,
+      "cohens_d": 31.854380148120253,
+      "sig": "***p<0.01"
+    },
+    {
+      "name": "naive_cost \u2212 rl_spot_cost",
+      "n": 25,
+      "mean_diff": 2.534,
+      "ci_lo": 2.4717780316656515,
+      "ci_hi": 2.596221968334348,
+      "t": 84.05261188560524,
+      "p": 3.6611978705256674e-31,
+      "cohens_d": 16.810522265600266,
+      "sig": "***p<0.01"
+    },
+    {
+      "name": "naive_pe_p95 \u2212 rl_spot_pe_p95",
+      "n": 25,
+      "mean_diff": -0.9350917964777196,
+      "ci_lo": -1.2159146109917263,
+      "ci_hi": -0.654268981963713,
+      "t": -6.872428143277753,
+      "p": 4.158694247979623e-07,
+      "cohens_d": -1.3744856266352028,
+      "sig": "***p<0.01"
+    },
+    {
+      "name": "hpa_viol \u2212 rl_spot_viol",
+      "n": 25,
+      "mean_diff": -0.11,
+      "ci_lo": -0.13120454199001216,
+      "ci_hi": -0.08879545800998784,
+      "t": -10.706613794630327,
+      "p": 1.2745144429322978e-10,
+      "cohens_d": -2.1413227172418554,
+      "sig": "***p<0.01"
+    },
+    {
+      "name": "naive_viol \u2212 rl_spot_viol",
+      "n": 25,
+      "mean_diff": -0.1,
+      "ci_lo": -0.12120454199001217,
+      "ci_hi": -0.07879545800998784,
+      "t": -9.733285267845751,
+      "p": 8.312144840918225e-10,
+      "cohens_d": -1.946657015674414,
+      "sig": "***p<0.01"
+    }
+  ],
+  "policies": {
+    "hpa_ondemand": {
+      "label": "HPA on-demand",
+      "color": "#2a78d6"
+    },
+    "naive_spot": {
+      "label": "Naive-spot",
+      "color": "#eda100"
+    },
+    "rl_homogeneous": {
+      "label": "RL homogeneous",
+      "color": "#1baf7a"
+    },
+    "rl_spot": {
+      "label": "RL-spot",
+      "color": "#008300"
+    }
+  }
+}

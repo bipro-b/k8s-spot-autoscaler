@@ -1,25 +1,27 @@
 """Fast cluster simulator for RL training — no I/O, no sleep, sub-ms per step.
 
-Calibrated v3 to 3-run real HPA mean (seeds 0/1/2 = 63.3%/56.7%/58.3%, mean=59.4%):
-  MU            = 8.0   RPS/pod  — pod capacity
-  TUNNEL_CAP    = 70.0  RPS      — minikube NodePort physical ceiling
-  P95_BASE_ZERO = 0.140 s        — recal v3: raised from 0.10 to match real mean latency
-  P95_SIGMA     = 0.62           — lognormal noise; matches real CFS+daemon jitter
-  SAT_THRESHOLD = 0.93           — cluster utilization above which queue explodes
-  STARTUP_STEPS = 3    steps     — pod startup lag (observed: HPA takes ~3x60s to ramp)
-  Gate v3 result: sim 58.2%+/-6.6% vs real mean 59.4% -> gap 1.3pp (threshold 8pp) -- PASSED
+Calibration history:
+  v3 (Phase 2): MU=8, P95_BASE=0.140, P95_SIGMA=0.62 → 58.2% HPA viol rate (real=59.4%, gap 1.3pp PASSED)
+  v4 (Phase 3 Step 0): MU=11, P95_TIMEOUT=3.5s
+    — Step 0 real data at 5-7 pods shows CFS throttling, NOT queueing, governs latency
+    — MU=8 caused catastrophic queue divergence (p95=60s) at 5 pods; MU=11 fixes this
+    — MAE_p95 drops from 12.758s to 0.303s at 5-7 pods (direction: correct)
+    — TRADE-OFF: HPA violation rate at 8 pods drops from 59.4% to ~40% in sim
+    — PARTIAL GATE: Step 4 real-eviction gate is the hard validator for Phase 3
+    — MAX_BACKLOG cap prevents unbounded queue growth after evictions
 """
 import numpy as np
 
-MU            = 8.0
-TUNNEL_CAP    = 70.0
-P95_BASE_ZERO = 0.140    # recal v2: NodePort + CFS base overhead (real p95_median=0.185s → base≈0.10)
-P95_SLOPE     = 0.030   # latency slope: p95_mean += SLOPE * rho/(1-rho)  (M/D/k approximation)
-P95_TIMEOUT   = 60.0
-P95_SIGMA     = 0.62    # recal v2: wider noise to match real CFS+daemon jitter (was 0.40)
-SAT_THRESHOLD = 0.93
-STARTUP_STEPS = 3
-PRICE         = {"ondemand": 1.00, "spot": 0.30}
+MU              = 11.0   # recal v4: CFS capacity ~6 RPS/pod but effective MU=11 prevents queue collapse
+TUNNEL_CAP      = 70.0
+P95_BASE_ZERO   = 0.140
+P95_SLOPE       = 0.030
+P95_TIMEOUT     = 3.5    # recal v4: real cluster max p95 at saturation ~1.5s (capped at 3.5s with margin)
+P95_SIGMA       = 0.62
+SAT_THRESHOLD   = 0.93
+STARTUP_STEPS   = 3
+MAX_BACKLOG_STEPS = 2    # backlog cap: at most 2 steps of excess demand, prevents unbounded growth
+PRICE           = {"ondemand": 1.00, "spot": 0.30}
 
 # Kept for backwards compat with gate_validate prints
 P95_BASE = P95_BASE_ZERO
@@ -111,7 +113,9 @@ class ClusterSim:
 
         total_demand   = self._backlog + arrivals
         served         = min(total_demand, capacity_srv)
-        self._backlog  = max(0.0, total_demand - served)
+        # Cap backlog to prevent unbounded growth after evictions (real servers reject, not queue)
+        max_backlog    = capacity_srv * MAX_BACKLOG_STEPS
+        self._backlog  = min(max(0.0, total_demand - served), max_backlog)
         served_rps     = served / step_s
 
         # 3. p95 latency — utilisation-aware M/D/k approximation

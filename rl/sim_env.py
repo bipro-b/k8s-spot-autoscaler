@@ -88,7 +88,7 @@ class SimEnv(gym.Env):
         super().reset(seed=seed)
         self._sim  = ClusterSim(seed=seed)
         self._sim.reset(pods=8)
-        self._spot = SpotSimulator(step_s=self.step_s)
+        self._spot = SpotSimulator(step_s=self.step_s, sim_mode=True, seed=seed or 0)
         # Initialise EWMA to first trace value — sensible prior, converges quickly
         self._ewma_rps = float(self.trace.iloc[0]["rps"])
         self.i         = 0

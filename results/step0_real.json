@@ -1,0 +1,88 @@
+{
+  "real_measurements": [
+    {
+      "pods": 5,
+      "offered_rps": 30,
+      "actual_pods": 5,
+      "served_rps": 30.71,
+      "p95_client": 0.4288,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 5,
+      "offered_rps": 45,
+      "actual_pods": 5,
+      "served_rps": 46.49,
+      "p95_client": 0.3254,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 5,
+      "offered_rps": 60,
+      "actual_pods": 5,
+      "served_rps": 61.52,
+      "p95_client": 1.5544,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 6,
+      "offered_rps": 30,
+      "actual_pods": 6,
+      "served_rps": 31.64,
+      "p95_client": 0.3649,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 6,
+      "offered_rps": 45,
+      "actual_pods": 6,
+      "served_rps": 46.14,
+      "p95_client": 0.2121,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 6,
+      "offered_rps": 60,
+      "actual_pods": 6,
+      "served_rps": 61.27,
+      "p95_client": 0.533,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 7,
+      "offered_rps": 30,
+      "actual_pods": 7,
+      "served_rps": 30.44,
+      "p95_client": 0.1287,
+      "shortfall_frac": 0.0,
+      "slo_violation": 0
+    },
+    {
+      "pods": 7,
+      "offered_rps": 45,
+      "actual_pods": 7,
+      "served_rps": 45.55,
+      "p95_client": 0.2358,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    },
+    {
+      "pods": 7,
+      "offered_rps": 60,
+      "actual_pods": 7,
+      "served_rps": 60.96,
+      "p95_client": 0.343,
+      "shortfall_frac": 0.0,
+      "slo_violation": 1
+    }
+  ],
+  "best_mu": 11.0,
+  "best_p95_cap": 3.5,
+  "gate_passed": false
+}

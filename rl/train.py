@@ -108,8 +108,6 @@ def main():
     )
 
     if a.sim:
-        # No bootstrap in sim: env resets to pods=8, and w_slo makes 1-pod clearly
-        # worse than 8-pod, so random exploration quickly learns to stay near 8 pods.
         model.learn(total_timesteps=a.timesteps)
         name = "rl_homogeneous" if a.homogeneous else "rl_spot"
         env.save(f"results/{name}_vecnorm.pkl")
@@ -120,6 +118,15 @@ def main():
     name = "rl_homogeneous" if a.homogeneous else "rl_spot"
     model.save(f"results/{name}.zip")
     print(f"Saved results/{name}.zip")
+
+    # Save reward weights so they're reproducible and reportable
+    import json, os
+    weights = {"w_cost": a.w_cost, "w_slo": a.w_slo, "w_risk": a.w_risk,
+               "w_smooth": a.w_smooth, "timesteps": a.timesteps,
+               "sim": a.sim, "homogeneous": a.homogeneous}
+    with open(f"results/{name}_weights.json", "w") as f:
+        json.dump(weights, f, indent=2)
+    print(f"Reward weights: w_cost={a.w_cost} w_slo={a.w_slo} w_risk={a.w_risk} w_smooth={a.w_smooth}")
 
 
 if __name__ == "__main__":
