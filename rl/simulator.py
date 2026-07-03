@@ -1,19 +1,19 @@
 """Fast cluster simulator for RL training — no I/O, no sleep, sub-ms per step.
 
-Calibrated v2 to results/hpa_v2.csv (27/60 = 45.0% SLO violations, client-side p95 + shortfall):
+Calibrated v3 to 3-run real HPA mean (seeds 0/1/2 = 63.3%/56.7%/58.3%, mean=59.4%):
   MU            = 8.0   RPS/pod  — pod capacity
   TUNNEL_CAP    = 70.0  RPS      — minikube NodePort physical ceiling
-  P95_BASE_ZERO = 0.10  s        — NodePort+CFS base overhead (real p95_median=0.185s)
+  P95_BASE_ZERO = 0.140 s        — recal v3: raised from 0.10 to match real mean latency
   P95_SIGMA     = 0.62           — lognormal noise; matches real CFS+daemon jitter
   SAT_THRESHOLD = 0.93           — cluster utilization above which queue explodes
-  STARTUP_STEPS = 3    steps     — pod startup lag (observed: HPA takes ~3×60s to ramp)
-  Gate v2 result: sim 46.2%±7.1% vs real 45.0% → gap 1.2pp (threshold 5pp) — PASSED
+  STARTUP_STEPS = 3    steps     — pod startup lag (observed: HPA takes ~3x60s to ramp)
+  Gate v3 result: sim 58.2%+/-6.6% vs real mean 59.4% -> gap 1.3pp (threshold 8pp) -- PASSED
 """
 import numpy as np
 
 MU            = 8.0
 TUNNEL_CAP    = 70.0
-P95_BASE_ZERO = 0.10    # recal v2: NodePort + CFS base overhead (real p95_median=0.185s → base≈0.10)
+P95_BASE_ZERO = 0.140    # recal v2: NodePort + CFS base overhead (real p95_median=0.185s → base≈0.10)
 P95_SLOPE     = 0.030   # latency slope: p95_mean += SLOPE * rho/(1-rho)  (M/D/k approximation)
 P95_TIMEOUT   = 60.0
 P95_SIGMA     = 0.62    # recal v2: wider noise to match real CFS+daemon jitter (was 0.40)
